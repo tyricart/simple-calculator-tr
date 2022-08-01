@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Calculator</title>
+</head>
+<body>
+    <h1>My Simple Calculator</h1>
+    <table class="calculator" >
+        <tr>
+          <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+       
+        </tr>
+        <tr>
+          <td> <input type="button" value="1" style="width: 150px;" onclick="display('1')" /> </td>
+          <td> <input type="button" value="2" style="width: 150px;" onclick="display('2')" /> </td>
+          <td> <input type="button" value="3" style="width: 150px;" onclick="display('3')" /> </td>
+        </tr>
+        <tr>
+          <td> <input type="button" value="4" onclick="display('4')" /> </td>
+          <td> <input type="button" value="5" onclick="display('5')" /> </td>
+          <td> <input type="button" value="6" onclick="display('6')" /> </td>
+        </tr>
+        <tr>
+          <td> <input type="button" value="7" onclick="display('7')" /> </td>
+          <td> <input type="button" value="8" onclick="display('8')" /> </td>
+          <td> <input type="button" value="9" onclick="display('9')" /> </td>
+        </tr>
+        <tr>
+          <td> <input type="button" value="." onclick="display('.')" /> </td>
+          <td> <input type="button" value="0" onclick="display('0')" /> </td>
+          <td> <input type="button" value="+" onclick="display('+')" /> </td>
+
+
+       
+        </tr>
+        <tr>
+            <td> <input type="button" value="-" onclick="display('-')" /> </td>
+            <td> <input type="button" value="*" onclick="display('*')" /> </td>
+            <td> <input type="button" value="/" onclick="display('/')" /> </td>
+
+        </tr>
+        <tr>
+            <td colspan="2"> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
+            <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+
+        </tr>
+
+      </table>
+
+      <script src="scripts.js"></script>
+</body>
+</html>
